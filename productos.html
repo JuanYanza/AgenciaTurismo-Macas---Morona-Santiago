@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VESTIMENTAEC</title>
+        <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+
+
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="img/logo.jpg" alt="BiciEc Logo">
+                <h1> TIENDA DE ROPA </h1>
+            </div>
+                    <div class="menu-toggle">&#9776;</div>
+
+            <nav>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="productos.html" class="active">Productos</a></li>
+                    <li><a href="nosotros.html">Nosotros</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                    <li><a href="cart.html">Carrito</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+ <main>
+        <section class="page-header">
+            <div class="container">
+                <h1>Elije tu vestimenta desde tu hogar</h1>
+                <p>Ropa 100% ORIGINAL.</p>
+            </div>
+        </section>
+
+        <section class="products-section">
+            <div class="container">
+                <div class="filter-bar">
+                    <select id="categoryFilter">
+                        <option value="all">Todas las categorías</option>
+                        <option value="camisas">Camisas</option>
+                        <option value="pant">Pantalones</option>
+                        <option value="zap">Zapatos</option>
+                        <option value="bla">Blazer</option>
+                    </select>
+                </div>
+
+                <div class="products-grid">
+                    <div class="product-card" data-category="laptops">
+                        <img src="img/products/blazerazul.jpg" alt="Blazer color azul">
+                        <h3>Blazer azul marino</h3>
+                        <p class="description">Blazer azul para hombre, elegante y versátil, ideal para eventos formales, reuniones, celebraciones y ocasiones especiales.
+</p>
+                        <p class="price">$25.00</p>
+                        <button class="btn add-to-cart">Agregar al Carrito</button>
+                    </div>
+
+                    <div class="product-card" data-category="mice">
+                        <img src="img/products/blazers.jpg" alt="blazer de varios colores">
+                        <h3>Blazer variocolore</h3>
+                        <p class="description">Bicicleta ideal para salir de ruta con amigos a increibles aventuras por los bosques.</p>
+                        <p class="price">$24.99 C/U</p>
+                        <button class="btn add-to-cart">Agregar al Carrito</button>
+                    </div>
+
+                    <div class="product-card" data-category="keyboards">
+                        <img src="img/products/botines.jpg" alt="Zapatos tipo botines">
+                        <h3>Botines de Cuero</h3>
+                        <p class="description">Para hombre, elegantes y resistentes, ideales para complementar atuendos casuales, formales y urbanos.</p>
+                        <p class="price">$40.00</p>
+                        <button class="btn add-to-cart">Agregar al Carrito</button>
+                    </div>
+
+                    <div class="product-card" data-category="laptops">
+                        <img src="img/products/camisacelestepolo.jpg" alt="camisa de la marca polo">
+                        <h3>Camisa Polo</h3>
+                        <p class="description">Camisa polo celeste para hombre, cómoda y versátil, perfecta para ocasiones casuales, reuniones y uso diario.</p>
+                        <p class="price">$19.99</p>
+                        <button class="btn add-to-cart">Agregar al Carrito</button>
+                    </div>
+
+                    <div class="product-card" data-category="mice">
+                        <img src="img/products/camisaverdeoliva.jpg" alt="camisa de color verde">
+                        <h3>Camisa de vestir</h3>
+                        <p class="description">Camisa polo verde oliva para hombre, cómoda y moderna, ideal para combinar con estilos casuales, urbanos y elegantes.</p>
+                        <p class="price">$21.99</p>
+                        <button class="btn add-to-cart">Agregar al Carrito</button>
+                    </div>
+
+                    <div class="product-card" data-category="keyboards">
+                        <img src="img/products/zapatosnegros.jpg" alt="zapatos semicasuales">
+                        <h3>Zapatos semicasuales</h3>
+                        <p class="description">Zapatos semicasuales negros para hombre, elegantes y cómodos, ideales para combinar atuendos formales, casuales y profesionales.</p>
+                        <p class="price">$29.99</p>
+                        <button class="btn add-to-cart">Agregar al Carrito</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Online BiciEc</h3>
+                    <p>Tu tienda  de confianza</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Enlaces</h3>
+                    <ul>
+                        <li><a href="pages/terms.html">Términos y Condiciones</a></li>
+                        <li><a href="pages/privacy.html">Privacidad</a></li>
+                        <li><a href="pages/help.html">Ayuda</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Contacto</h3>
+                    <p>Email: jyanzal@ute.edu.ecc</p>
+                    <p>Tel: +1 234 567 890</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2026 Tienda de Ropa para Hombre. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+       <script src="js/main.js"></script>
+
+
+    <script>
+const menuToggle = document.querySelector(".menu-toggle");
+const nav = document.querySelector("header nav");
+
+menuToggle.addEventListener("click", () => {
+    nav.classList.toggle("active");
+});
+</script>
+
+</body>
+</html>

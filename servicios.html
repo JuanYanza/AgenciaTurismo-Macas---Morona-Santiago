@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MACAS AVENTURA</title>
+        <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+
+
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="img/logo.png" alt="Logo de sitio web">
+                <h1> SERVICIOS TURÍSTICOS EN MACAS </h1>
+            </div>
+                    <div class="menu-toggle">&#9776;</div>
+
+            <nav>
+                <ul>
+                    <li><a href="index.html">INICIO</a></li>
+                    <li><a href="productos.html" class="active">DESTINOS</a></li>
+                    <li><a href="nosotros.html">NOSOTROS</a></li>
+                    <li><a href="contacto.html">CONTACTO</a></li>
+                    <li><a href="servicios.html">SERVICIOS</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+ <main>
+        <section class="page-header">
+            <div class="container">
+                <h1>Elije tu paquete turístico favorito </h1>
+                <p>20% de DESCUENTO con la palara/clave : JUANYANZAUTEQ</p>
+            </div>
+        </section>
+
+        <section class="products-section">
+            <div class="container">
+                <div class="filter-bar">
+                    <select id="categoryFilter">
+                        <option value="all">Todas las categorías</option>
+                        <option value="camisas">Naturaleza</option>
+                        <option value="cultura">Cultura y patrimonio</option>
+                        <option value="zap">Recreación y aventura</option>
+                    </select>
+                </div>
+
+                <div class="products-grid">
+                    <div class="product-card" data-category="Naturaleza">
+                        <img src="img/products/tour1.jpg" alt="Tour de Naturaleza en Macas">
+                        <h3>Aventura en el Corazón de la Amazonía</h3>
+                        <h4>Misterios de la Cueva de los Tayos</h4>
+                        <p class="description">Explora uno de los lugares más enigmáticos de la Amazonía ecuatoriana y descubre el 
+                            entorno natural y las historias que rodean a la famosa Cueva de los Tayos.</p>
+                        <b>Tipo de servicio:</b> Excursión de naturaleza y exploración.</p>
+                        <p><b>Precio referencial:</b> $40 por persona.</p>
+                        <a href="destinos.html">
+            <button class="btn">Reservar</button>
+        </a>
+                    </div>
+
+                    <div class="product-card" data-category="Cultura y patrimonio">
+                        <img src="img/products/tour2.jpg" alt="Tour Gastronómico de Macas">
+                        <h3>Sabores que Cuentan Historias</h3>
+                        <p class="description">Descubre los sabores tradicionales de Macas y disfruta de platos típicos de la gastronomía amazónica. </p>
+                        <b>Tipo de servicio:</b> Recorrido gastronómico. Desayuno Almuerzo Merienda (Restaurantes seguros y tradicionales)</p>
+                        <p><b>Precio referencial:</b> $20 por persona.</p>
+                        <a href="destinos.html">
+            <button class="btn">Reservar</button>
+        </a>
+                    </div>
+
+                    <div class="product-card" data-category="Naturaleza">
+                        <img src="img/products/tour3.png" alt="Tour de Aventura en el río Upano">
+                        <h3>Rumbo a la Aventura por el Upano</h3>
+                        <p class="description">Espacio recreativo rodeado de naturaleza, ideal para disfrutar
+            de un momento tranquilo y observar el paisaje.</p>
+                        <b>Tipo de servicio:</b>Tour de aventura y actividades acuáticas.</p>
+                        <p><b>Actividad:</b>Caminata, fotografía y recreación.</p>
+                        <a href="servicios.html">
+            <button class="btn">Visitar</button>
+        </a>
+                    </div>
+
+
+                    
+                    </div>
+
+                    
+
+                    
+
+
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>MACAS AVENTURA</h3>
+                    <p>Descubre la belleza natural y cultural de Macas, Morona Santiago.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Enlaces</h3>
+                    <ul>
+                        <li><a href="pages/terms.html">Términos y Condiciones</a></li>
+                        <li><a href="pages/privacy.html">Privacidad</a></li>
+                        <li><a href="pages/help.html">Ayuda</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Contacto</h3>
+                    <p>Email: jyanzal@ute.edu.ecc</p>
+                    <p>Tel: +1 234 567 890</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2026 Macas Aventura. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+       <script src="js/main.js"></script>
+
+
+    <script>
+const menuToggle = document.querySelector(".menu-toggle");
+const nav = document.querySelector("header nav");
+
+menuToggle.addEventListener("click", () => {
+    nav.classList.toggle("active");
+});
+</script>
+
+</body>
+</html>
